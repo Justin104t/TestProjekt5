@@ -1,0 +1,217 @@
+{
+    "linkWord": " und ",
+    "answers": [
+        {
+            "intent": "hallo",
+            "keywords": [
+                "essen",
+                "pizza",
+                "fisch",
+                "pasta",
+                "getränke"
+            ],
+            "answer": "Hallo. Ich bin ein Restaurant Bot. Was wollen Sie bestellen? Wir haben verschiedene Pizza, Pasta und Fisch. Als Getränke haben wir Cola, Fanta und Eis Tee."
+        },
+        {
+            "intent": "bestellen",
+            "keywords": [
+                "pizza",
+                "pasta",
+                "fisch",
+                "getränke",
+                "essen"
+            ],
+            "answer": " Was wollen Sie bestellen? Wir haben verschiedene Pizza, Pasta und Fisch. Als Getränke haben wir Cola, Fanta und Eis Tee"
+        },
+        {
+            "intent": "bestellung",
+            "keywords": [
+                "pizza",
+                "pasta",
+                "fisch",
+                "getränke",
+                "essen"
+            ],
+            "answer": "Guten Tag. Sie wollen eine Bestellung aufgeben. Was möchten Sie bestellen?Wir haben verschiedene Pizza, Pasta und Fisch. Als Getränke haben wir Cola, Fanta und Eis Tee"
+        },
+        {
+            "intent": "getränke",
+            "keywords": [
+                "cola",
+                "fanta",
+                "eis tee"
+            ],
+            "answer": "Sie möchten ein Getränk bestellen. Wir haben Cola, Fanta und Eis Tee. Bitte wählen Sie:"
+        },
+        {
+            "intent": "essen",
+            "keywords": [
+                "pizza",
+                "pasta",
+                "fisch"
+            ],
+            "answer": "Was möchten Sie denn haben? Wir haben verschiedene Pizza, Pasta und Fisch sorten."
+        },
+        {
+            "intent": "cola",
+            "keywords": [
+                "ja",
+                "nein"
+            ],
+            "answer": "Ich habe eine Cola notiert.Falls Sie kein Essen bestellt haben, wollen Sie etwas zum essen?"
+        },
+        {
+            "intent": "fanta",
+            "keywords": [
+                "ja",
+                "nein"
+            ],
+            "answer": "Sie wollen eine Fanta.Super! Möchten Sie noch ezwas dazu?"
+        },
+        {
+            "intent": "eis tee",
+            "keywords": [
+                "ja",
+                "nein"
+            ],
+            "answer": "Sehr gutes Wahl! Ein Eis Tee habe ich notiert. Kommt noch was dazu?"
+        },
+        {
+            "intent": "pizza",
+            "keywords": [
+                "pizza Napoli",
+                "pizza Margherita",
+                "pizza Fungi"
+            ],
+            "answer": "Unsere Pizza ist das beste! Wir haben Pizza Margherita, Pizza Napoli und Pizza Fungi. Bitte wählen Sie:"
+        },
+        {
+            "intent": "pasta",
+            "keywords": [
+                "carbonara",
+                "bolognese"
+            ],
+            "answer": "Es gibt Pasta Bolognese oder Carbonara. Welche davon soll es denn sein? Bitte wählen:"
+        },
+        {
+            "intent": "fisch",
+            "keywords": [
+                "lachs",
+                "forelle",
+                "thunfisch"
+            ],
+            "answer": "Sehr lecker! Wir können Lachs, Forelle oder Thunfisch servieren. Welche davon wollen Sie?"
+        },
+        {
+            "intent": "pizza margherita",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            "answer": "Gute Wahl! Habe ich notiert. Wollen Sie noch etwas anderes Bestellen?"
+        },
+        {
+            "intent": "pizza napoli",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            
+            "answer": "Pizza Napoli..habe ich notiert. Kommt noch was dazu? "
+        },
+        {
+            "intent": "pizza fungi",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            "answer": "Sie haben wirklich einen guten Geschmack! Möchten Sie etwas anderes auch probieren? "
+        },
+        {
+            "intent": "bolognese",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            "answer": "Sehr gut! Pasta Bolognese habe ich notiert. Kommt noch was dazu?"
+        },
+        {
+            "intent": "carbonara",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            "answer": "Wunderschön! Die beste Carbonara! Soll noch etwas sein?"
+        },
+        {
+            "intent": "lachs",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            "answer": "Gute Wahl! Habe ich notiert. Wollen Sie noch etwas dazu?"
+        },
+        {
+            "intent": "forelle",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            "answer": "Eine portion Forelle...Kommt noch was dazu?"
+        },
+        {
+            "intent": "thunfisch",
+            "keywords": [
+                "nein",
+                "ja"
+            ],
+            "answer": "Sie haben wirklich einen guten Geschmack!ich habe Thunfisch notiert. Möchten Sie noch etwas anderes?"
+        },
+        {
+            "intent": "nein",
+            "keywords": [],
+            "answer": "Vielen dank für Ihre Bestellung. Falls Sie doch noch etwas bestellen möchten, schreiben Sie es einfach hier. Guten Appetit und schönen Tag!"
+        },
+        {
+            "intent": "ja",
+            "keywords": [
+                "bestellen"
+            ],
+            "answer": "Was mochten Sie noch bestellen?"
+        }
+    ],
+    "mappings": [
+        {
+            "searchPatterns": [
+                "napoli pizza",
+                "pizza napoli",
+                "napoli",
+                "pizza aus napoli"
+            ],
+            "intent": "pizza napoli"
+        },
+        {
+            "searchPatterns": [
+                "pizza margherita",
+                "margherita pizza",
+                "margherita"
+            ],
+            "intent": "pizza margherita"
+        },
+        {
+            "searchPatterns": [
+                "pizza fungi",
+                "fungi",
+                "fungi pizza"
+            ],
+            "intent": "pizza fungi"
+        },
+        {
+            "searchPatterns": [
+                "cocacola",
+                "coca cola"
+            ],
+            "intent": "cola"
+        }
+    ]
+}
