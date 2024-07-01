@@ -5,7 +5,7 @@ const fs = require('fs');
 const bot = require("./bot")
 //Benötigte Module
 const express = require('express');
-const https = require('https');
+/*const https = require('https');*/
 const WebSocket = require('ws');
 
 /*let errorCount = 0;
