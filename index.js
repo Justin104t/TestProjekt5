@@ -8,12 +8,12 @@ const express = require('express');
 const https = require('https');
 const WebSocket = require('ws');
 
-let errorCount = 0;
+/*let errorCount = 0;
 
 function getCurrentTime() {
   const now = new Date();
   return now.toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' });
-}
+}*/
 
 //Zertifikat und Schlüssel
 const options = {
@@ -33,7 +33,7 @@ const server = https.createServer(options, app);
 //Websocket-Server (Läuft auf dem gleichen HTTP-Server)
 const wss = new WebSocket.Server({ server });
 
-//Bei Websocket-Verbindung:
+/*//Bei Websocket-Verbindung:
 wss.on('connection', (ws) => {
   console.log('Client connected')
 
@@ -102,7 +102,7 @@ function processResponse(answer) {
     type: 'chat',
     content: responseHTML
   }
-}
+}*/
 
 //HTTP-Server starten und Portzuweisung (Chat-GPT zeigte mit process.env.PORT)
 const port = process.env.PORT || 9000;
