@@ -3,7 +3,7 @@ const inputField = document.querySelector(".input-field");
 const button = document.querySelector(".input-button");
 const chatBox = document.querySelector(".chat-container");
 
-const url = "wss://localhost:9000"
+const url = "wss://localhost:8080"
 
 const ws = new WebSocket(url);
 
