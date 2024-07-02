@@ -18,12 +18,13 @@ ws.onmessage = (event) => {
 
   if (Array.isArray(message)) {
     message.forEach(message => {
-      chatBox.innerHTML += message.content
+      chatBox.innerHTML += message.content;
+      scrollToBottom();
     })
   } else {
-    chatBox.innerHTML += message.content
+    chatBox.innerHTML += message.content;
+    scrollToBottom();
   }
-
 };
 
 ws.onclose = () => {
