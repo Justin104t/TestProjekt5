@@ -1,12 +1,12 @@
 "use strict";
 
 //Modules to read JSON
-const fs = require('fs');
-const bot = require("./bot")
+/*const fs = require('fs');*/
+/*const bot = require("./bot")*/
 //Benötigte Module
 const express = require('express');
 const https = require('https');
-const WebSocket = require('ws');
+/*const WebSocket = require('ws');*/
 
 /*let errorCount = 0;
 
@@ -31,7 +31,7 @@ app.use(express.static('public'));
 const server = https.createServer(options, app);
 
 //Websocket-Server (Läuft auf dem gleichen HTTP-Server)
-const wss = new WebSocket.Server({ server });
+/*const wss = new WebSocket.Server({ server });*/
 
 /*//Bei Websocket-Verbindung:
 wss.on('connection', (ws) => {
