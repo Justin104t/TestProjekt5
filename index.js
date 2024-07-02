@@ -5,7 +5,7 @@
 /*const bot = require("./bot")*/
 //Benötigte Module
 const express = require('express');
-const https = require('https');
+const http = require('http');
 /*const WebSocket = require('ws');*/
 
 /*let errorCount = 0;
@@ -28,8 +28,8 @@ const app = express();
 app.use(express.static('public'));
 
 //HTTP-Server mit Express-App
-const server = https.createServer(options, app);
-
+/*const server = https.createServer(options, app);*/
+ const server = http.createServer(app);
 //Websocket-Server (Läuft auf dem gleichen HTTP-Server)
 /*const wss = new WebSocket.Server({ server });*/
 
