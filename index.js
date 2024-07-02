@@ -2,7 +2,7 @@
 
 //Modules to read JSON
 const fs = require('fs');
-/*const bot = require("./bot")*/
+const bot = require("./bot")
 //Benötigte Module
 const express = require('express');
 const http = require('http');
@@ -16,10 +16,10 @@ function getCurrentTime() {
 }
 
 //Zertifikat und Schlüssel
-const options = {
+/*const options = {
   key: fs.readFileSync('key.pem'),
   cert: fs.readFileSync('cert.pem')
-};
+};*/
 
 //Express-App
 const app = express();
