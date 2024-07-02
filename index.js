@@ -1,7 +1,7 @@
 "use strict";
 
 //Modules to read JSON
-/*const fs = require('fs');*/
+const fs = require('fs');
 /*const bot = require("./bot")*/
 //Benötigte Module
 const express = require('express');
