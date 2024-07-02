@@ -105,7 +105,7 @@ function processResponse(answer) {
 }
 
 //HTTP-Server starten und Portzuweisung (Chat-GPT zeigte mit process.env.PORT)
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 80;
 server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 })
