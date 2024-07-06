@@ -5,7 +5,7 @@ const fs = require('fs');
 const bot = require("./bot")
 //Benötigte Module
 const express = require('express');
-const http = require('http');
+const http = require('http');  /*s weg*/
 const WebSocket = require('ws');
 
 let errorCount = 0;
@@ -28,8 +28,8 @@ const app = express();
 app.use(express.static('public'));
 
 //HTTP-Server mit Express-App
-/*const server = https.createServer(options, app);*/
- const server = http.createServer(app);
+const server = http.createServer(options, app); /*s weg*/
+
 //Websocket-Server (Läuft auf dem gleichen HTTP-Server)
 const wss = new WebSocket.Server({ server });
 
@@ -41,11 +41,14 @@ wss.on('connection', (ws) => {
 
   const botGreeting = {
     type: 'chat',
-    content: `<div class="message-container">
-                <div class="icon-bot">&#129302;</div>
-                <div class="message bot">${greeting}</div>
-                <div class="time">${getCurrentTime()}</div>
-              </div>`
+    content:  `<li class="message" style="width:100%;">
+                <div class="msj-rta macro">
+                  <div class="text text-r">
+                    <p>${greeting}</p> 
+                    <p><small>${getCurrentTime()}</small></p>
+                  </div> 
+                <div class="avatar" style="padding:0px 0px 0px 10px !important"><img class="img-circle" style="width:100%;" src="https://img.freepik.com/vektoren-premium/laechelnder-chef-zeichentrickfigur-der-eine-pizza-haelt-und-mit-ok-gestimmt_20412-4739.jpg?w=1380"/></div>                                
+              </li>`
   }
   ws.send(JSON.stringify(botGreeting));
 
@@ -92,11 +95,14 @@ wss.on('connection', (ws) => {
 })
 
 function processResponse(answer) {
-  const responseHTML = `<div class="message-container">
-                            <div class="icon-bot">&#129302;</div>
-                            <div class="message bot">${answer}</div>
-                            <div class="time">${getCurrentTime()}</div>
-                          </div>`;;
+  const responseHTML = `<li class="message" style="width:100%;">
+                          <div class="msj-rta macro">
+                            <div class="text text-r">
+                              <p>${answer}</p> 
+                              <p><small>${getCurrentTime()}</small></p>
+                            </div> 
+                          <div class="avatar" style="padding:0px 0px 0px 10px !important"><img class="img-circle" style="width:100%;" src="https://img.freepik.com/vektoren-premium/laechelnder-chef-zeichentrickfigur-der-eine-pizza-haelt-und-mit-ok-gestimmt_20412-4739.jpg?w=1380"/></div>                                
+                        </li>`
 
   return {
     type: 'chat',
@@ -105,7 +111,7 @@ function processResponse(answer) {
 }
 
 //HTTP-Server starten und Portzuweisung (Chat-GPT zeigte mit process.env.PORT)
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 443;  /*8080*/
 server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 })
