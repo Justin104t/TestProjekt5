@@ -28,7 +28,7 @@ const app = express();
 app.use(express.static('public'));
 
 //HTTP-Server mit Express-App
-const server = http.createServer(options, app); /*s weg*/
+const server = http.createServer(app); /*s weg*/ /*options*/
 
 //Websocket-Server (Läuft auf dem gleichen HTTP-Server)
 const wss = new WebSocket.Server({ server });
