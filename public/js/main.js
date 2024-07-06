@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       setTimeout(() => {
         const scrollingElement = (document.scrollingElement || document.body);
         scrollingElement.scrollTop = scrollingElement.scrollHeight;
-      }, 100);
+      }, 500);
   }
 
   // Auto-focus Input-Field when website loaded
