@@ -22,10 +22,10 @@ function displayIntentOptions(intents) {
 function convertResultToHTML(result) {
     return `
         <p>${result.answer}</p>
-        <ul>${result.keywords.map(keyword => {
-        return `<li>${keyword[0].toUpperCase() + keyword.slice(1)}</li>`
+        <div>${result.keywords.map(keyword => {
+        return `<p>&bull; ${keyword[0].toUpperCase() + keyword.slice(1)}</p>`
     }).join("")
-        }</ul>
+        }</div>
     `
 }
 //intent nach Name
