@@ -50,7 +50,7 @@
                 "pasta",
                 "fisch"
             ],
-            "answer": "Was möchten Sie denn haben? Wir haben verschiedene Pizza, Pasta und Fisch sorten."
+            "answer": "Was möchten Sie denn haben? Wir haben verschiedene Pizza, Pasta und Fischsorten."
         },
         {
             "intent": "cola",
@@ -66,7 +66,7 @@
                 "ja",
                 "nein"
             ],
-            "answer": "Sie wollen eine Fanta.Super! Möchten Sie noch ezwas dazu?"
+            "answer": "Sie wollen eine Fanta. Super! Möchten Sie noch ezwas dazu?"
         },
         {
             "intent": "eis tee",
@@ -74,7 +74,7 @@
                 "ja",
                 "nein"
             ],
-            "answer": "Sehr gutes Wahl! Ein Eis Tee habe ich notiert. Kommt noch was dazu?"
+            "answer": "Sehr gute Wahl! Ein Eis Tee habe ich notiert. Kommt noch was dazu?"
         },
         {
             "intent": "pizza",
@@ -108,7 +108,7 @@
                 "nein",
                 "ja"
             ],
-            "answer": "Gute Wahl! Habe ich notiert. Wollen Sie noch etwas anderes Bestellen?"
+            "answer": "Gute Wahl! Habe ich notiert. Wollen Sie noch etwas anderes bestellen?"
         },
         {
             "intent": "pizza napoli",
@@ -141,7 +141,7 @@
                 "nein",
                 "ja"
             ],
-            "answer": "Wunderschön! Die beste Carbonara! Soll noch etwas sein?"
+            "answer": "Wunderschön! Die beste Carbonara! Soll es noch etwas sein?"
         },
         {
             "intent": "lachs",
@@ -157,7 +157,7 @@
                 "nein",
                 "ja"
             ],
-            "answer": "Eine portion Forelle...Kommt noch was dazu?"
+            "answer": "Eine Portion Forelle...Kommt noch was dazu?"
         },
         {
             "intent": "thunfisch",
@@ -165,7 +165,7 @@
                 "nein",
                 "ja"
             ],
-            "answer": "Sie haben wirklich einen guten Geschmack!ich habe Thunfisch notiert. Möchten Sie noch etwas anderes?"
+            "answer": "Sie haben wirklich einen guten Geschmack! Ich habe Thunfisch notiert. Möchten Sie noch etwas anderes?"
         },
         {
             "intent": "nein",
@@ -177,7 +177,7 @@
             "keywords": [
                 "bestellen"
             ],
-            "answer": "Was mochten Sie noch bestellen?"
+            "answer": "Was möchten Sie noch bestellen?"
         }
     ],
     "mappings": [
