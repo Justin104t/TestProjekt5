@@ -70,7 +70,7 @@ wss.on('connection', (ws) => {
         } catch (error) {
           errorCount++;
           if (errorCount >= 3) {
-            answer = "Entschuldigung, ich verstehe Sie nicht, ich bin nur ein Bot. Bitte verwenden Sie einer der oben genannten Schlüsselwörter um fortzufahren.";
+            answer = "Entschuldigung, ich verstehe Sie nicht, ich bin nur ein Bot. Bitte schreiben Sie -Bestellen- um die Bestellung neu aufzugeben.";
             errorCount = 0; // Counter wird restarted, wenn der ^ Nachricht angezeigt wird
           } else {
             answer = "Tut mir leid, das habe ich nicht verstanden. Probieren Sie nochmal.";
