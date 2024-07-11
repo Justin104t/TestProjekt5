@@ -81,9 +81,9 @@
             "keywords": [
                 "pizza Napoli",
                 "pizza Margherita",
-                "pizza Fungi"
+                "pizza Funghi"
             ],
-            "answer": "Unsere Pizza ist das beste! Wir haben Pizza Margherita, Pizza Napoli und Pizza Fungi. Bitte wählen Sie:"
+            "answer": "Unsere Pizza ist das beste! Wir haben Pizza Margherita, Pizza Napoli und Pizza Funghi. Bitte wählen Sie:"
         },
         {
             "intent": "pasta",
@@ -120,7 +120,7 @@
             "answer": "Pizza Napoli..habe ich notiert. Kommt noch was dazu? "
         },
         {
-            "intent": "pizza fungi",
+            "intent": "pizza funghi",
             "keywords": [
                 "nein",
                 "ja"
@@ -200,11 +200,11 @@
         },
         {
             "searchPatterns": [
-                "pizza fungi",
-                "fungi",
-                "fungi pizza"
+                "pizza funghi",
+                "funghi",
+                "funghi pizza"
             ],
-            "intent": "pizza fungi"
+            "intent": "pizza funghi"
         },
         {
             "searchPatterns": [
