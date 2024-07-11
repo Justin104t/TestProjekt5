@@ -5,7 +5,7 @@ const fs = require('fs');
 const bot = require("./bot")
 //Benötigte Module
 const express = require('express');
-const http = require('http');  /*s weg*/
+const http = require('http');  
 const WebSocket = require('ws');
 
 let errorCount = 0;
@@ -28,7 +28,7 @@ const app = express();
 app.use(express.static('public'));
 
 //HTTP-Server mit Express-App
-const server = http.createServer(app); /*s weg*/ /*options*/
+const server = http.createServer(app);
 
 //Websocket-Server (Läuft auf dem gleichen HTTP-Server)
 const wss = new WebSocket.Server({ server });
@@ -111,7 +111,7 @@ function processResponse(answer) {
 }
 
 //HTTP-Server starten und Portzuweisung (Chat-GPT zeigte mit process.env.PORT)
-const port = process.env.PORT || 443;  /*8080*/
+const port = process.env.PORT || 443;  
 server.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 })
