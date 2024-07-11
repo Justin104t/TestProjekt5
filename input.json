@@ -66,7 +66,7 @@
                 "ja",
                 "nein"
             ],
-            "answer": "Sie wollen eine Fanta. Super! Möchten Sie noch ezwas dazu?"
+            "answer": "Sie wollen eine Fanta. Super! Möchten Sie noch etwas dazu?"
         },
         {
             "intent": "eis tee",
@@ -74,7 +74,7 @@
                 "ja",
                 "nein"
             ],
-            "answer": "Sehr gute Wahl! Ein Eis Tee habe ich notiert. Kommt noch was dazu?"
+            "answer": "Sehr gute Wahl! Einen Eis Tee habe ich notiert. Kommt noch was dazu?"
         },
         {
             "intent": "pizza",
@@ -83,7 +83,7 @@
                 "pizza Margherita",
                 "pizza Funghi"
             ],
-            "answer": "Unsere Pizza ist das beste! Wir haben Pizza Margherita, Pizza Napoli und Pizza Funghi. Bitte wählen Sie:"
+            "answer": "Unsere Pizza ist das Beste! Wir haben Pizza Margherita, Pizza Napoli und Pizza Funghi. Bitte wählen Sie:"
         },
         {
             "intent": "pasta",
@@ -157,7 +157,7 @@
                 "nein",
                 "ja"
             ],
-            "answer": "Eine Portion Forelle...Kommt noch was dazu?"
+            "answer": "Eine Portion Forelle...kommt noch was dazu?"
         },
         {
             "intent": "thunfisch",
@@ -170,7 +170,7 @@
         {
             "intent": "nein",
             "keywords": [],
-            "answer": "Vielen dank für Ihre Bestellung. Falls Sie doch noch etwas bestellen möchten, schreiben Sie es einfach hier. Guten Appetit und schönen Tag!"
+            "answer": "Vielen Dank für Ihre Bestellung. Falls Sie doch noch etwas bestellen möchten, schreiben Sie es einfach hier. Guten Appetit und schönen Tag!"
         },
         {
             "intent": "ja",
