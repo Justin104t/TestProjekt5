@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const button = document.querySelector(".input-button");
   const chatBox = document.querySelector(".chatbox");
 
-  const url = "wss://pizza-chatbot.azurewebsites.net:443"   /*"wss://localhost:8080"*/
+  const url = "wss://pizza-chatbot.azurewebsites.net:443"   
 
   const ws = new WebSocket(url);
 
