@@ -36,6 +36,7 @@ const wss = new WebSocket.Server({ server });
 //Bei Websocket-Verbindung:
 wss.on('connection', (ws) => {
   console.log('Client connected')
+  ws.chatHistory = []; // Initialisieren des benutzerspezifischen Chat-Verlaufs
 
   const greeting = bot.displayIntentOptions("hallo")
 
@@ -52,6 +53,8 @@ wss.on('connection', (ws) => {
   }
   ws.send(JSON.stringify(botGreeting));
 
+  ws.chatHistory.push({ role: 'bot', content: greeting });
+
   //Wenn eine Nachricht ankommt
   ws.on('message', (data) => {
     const message = JSON.parse(data);
@@ -60,6 +63,9 @@ wss.on('connection', (ws) => {
     switch (message.type) {
       case 'chat':
         console.log('Chat message received:', message.content)
+
+        // Chat-Verlauf aktualisieren
+        ws.chatHistory.push({ role: 'user', content: message.content });
 
         //Standard answer
         let answer
@@ -76,6 +82,9 @@ wss.on('connection', (ws) => {
             answer = "Tut mir leid, das habe ich nicht verstanden. Probieren Sie nochmal.";
           }
         }
+
+        // Chat-Verlauf aktualisieren mit der Antwort des Bots
+        ws.chatHistory.push({ role: 'bot', content: answer });
 
         answer = answer.split("||").map(processResponse)
 
